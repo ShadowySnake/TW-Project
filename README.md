@@ -1,5 +1,5 @@
 
-# LeHS (Learn HTML & CSS) / M
+# LeHS (Learn HTML & CSS)
 
 Sa se creeze un sistem Web ce ajuta diverse categorii de persoane (de la incepatori la experti) sa invete, exerseze si aprofundeze cunostinte referitoare la HTML si CSS.
 
