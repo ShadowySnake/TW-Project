@@ -1,0 +1,89 @@
+body {
+    font-size: 25px;
+    background-image: linear-gradient(turquoise, rgb(255, 108, 108), black);
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(255, 61, 61);
+    padding: 0.5em;
+    border-color: #ff5050;
+    border-radius: 2em;
+    margin-bottom: 0.5em;
+}
+
+.header--welcome {
+    color: rgb(30, 255, 0);
+    padding-top: 0.15em;
+    padding-left: 1em;
+}
+
+header>section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header--question {
+    color: rgb(30, 255, 0);
+    padding-top: 0.15em;
+    padding-right: 1em;
+}
+
+.login {
+    font-size: 16px;
+    border-color: #922b2b;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+button.login:active {
+    margin: 0px;
+    background-color: #ff7979;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.main--to--HTML {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.main--to--CSS {
+    display: flex;
+    flex-direction: column;
+}
+
+.HTML--buttons {
+    padding: 0.5em;
+    border-radius: 1em;
+    max-width: 20%;
+}
+
+.CSS--buttons {
+    padding: 0.5em;
+    border-radius: 1em;
+    max-width: 20%;
+}
+
+footer {
+    color: white;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer--text {
+    position: absolute;
+    bottom: 3%;
+}
