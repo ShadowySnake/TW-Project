@@ -1,6 +1,6 @@
 body {
     font-size: 25px;
-    background-image: linear-gradient(turquoise, rgb(255, 108, 108), black);
+    background-image:         url(https://wallpaperaccess.com/full/1567666.png);
     background-attachment: fixed;
 }
 
@@ -8,7 +8,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(255, 61, 61);
+    background-color: rgb(5, 61, 61);
     padding: 0.5em;
     border-color: #ff5050;
     border-radius: 2em;
@@ -16,7 +16,7 @@ header {
 }
 
 .header--welcome {
-    color: rgb(30, 255, 0);
+    color: white;
     padding-top: 0.15em;
     padding-left: 1em;
 }
@@ -28,9 +28,69 @@ header>section {
 }
 
 .header--question {
-    color: rgb(30, 255, 0);
+    color: white;
     padding-top: 0.15em;
     padding-right: 1em;
+}
+
+.documentation{
+  width: 200px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    background: black;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+    letter-spacing : 2px;
+}
+.documentation:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 30s linear infinite;
+    opacity:0;
+    transition: opacity .3s ease;
+    border-radius: 10px;
+}
+
+.documentation:active {
+    color: #000;
+}
+
+.documentation:active:after {
+    background: transparent;
+}
+
+.documentation:hover:before {
+    opacity: 1;
+}
+
+.documentation:after {
+    z-index: -1;
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
 
 .login {
@@ -39,7 +99,19 @@ header>section {
     padding: 0.5em;
     border-radius: 1em;
 }
+.login:hover{
+    background-color: #555;
+}
 
+.signup{
+    font-size: 16px;
+    border-color : #922b2b;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+.signup:hover{
+    background-color: #555;
+}
 button.login:active {
     margin: 0px;
     background-color: #ff7979;
@@ -52,27 +124,76 @@ main {
 }
 
 .main--to--HTML {
+    color: white;
+    float: left;
+    width: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items:center;
 }
 
 .main--to--CSS {
+    color: white;
+    float: left;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
 }
+
 
 .HTML--buttons {
     padding: 0.5em;
-    border-radius: 1em;
-    max-width: 20%;
+    height:150px;
+    width:90%;
+    background: #008B8B;
+    color: white;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    display: block;
+    background: linear-gradient(to right, #5F9EA0  50%,#008B8B 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    margin-top: 20px;
 }
+
+
+.HTML--buttons:hover{
+  color: #fff;
+  cursor: pointer;
+  background-position: left bottom;
+}
+
 
 .CSS--buttons {
     padding: 0.5em;
-    border-radius: 1em;
-    max-width: 20%;
+    height:150px;
+    width:90%;
+    background: #008B8B;
+    color: white;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    display: block;
+    background: linear-gradient(to left, #5F9EA0 50%, #008B8B 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: all .5s ease-out;
+    margin-top: 20px;
 }
+
+.CSS--buttons:hover{
+  color: #fff;
+  cursor: pointer;
+  background-position: right bottom;
+}
+
 
 footer {
     color: white;
@@ -84,6 +205,7 @@ footer {
 }
 
 .footer--text {
+    color: red;
     position: absolute;
     bottom: 3%;
 }
