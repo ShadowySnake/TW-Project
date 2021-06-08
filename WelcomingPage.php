@@ -39,6 +39,7 @@
         include_once './utils/gitNameGetter.php';
         $namer = new GitName();
         echo '<div class="header--question">' . $namer->getName($access_token) . '</div>';
+        echo '<a href = "utils/logout.php"> <button class="login"> Logout </button></a>';
       }
     ?>
   </header>

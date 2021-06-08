@@ -12,7 +12,7 @@
   <body>
     
     <div class="formular">
-      <form class="cont">
+      <form class="cont" action="../utils/formGet.php" method="get">
         <div class="container">
           <div class ="text">Sign Up</div>
           <hr>
@@ -28,7 +28,7 @@
               <a href="../WelcomingPage.php">
                 <button type="button" class="cancelbuttton">Cancel</button>
             </a>
-            <button type="submit">Sign Up</button>
+            <button type="submit" name="submit">Sign Up</button>
           </div>
         </div>
       </form>

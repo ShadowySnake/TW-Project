@@ -12,7 +12,7 @@
   <body>
     
     <div class="formular">
-      <form class="cont">
+      <form class="cont" action="../utils/formGet.php" method="get">
         <div class="container">
           <div class ="text">Login</div>
           <hr>
@@ -25,7 +25,7 @@
               <a href="../WelcomingPage.php">
                 <button type="button" class="cancelbuttton">Cancel</button>
               </a>
-            <button type="submit">Login</button>
+            <button type="submit" name="submit">Login</button>
             <a href="https://github.com/login/oauth/authorize?client_id=76145ce672ea3feedf50">
             <button type="button">Log in with github!</button>
             </a>
