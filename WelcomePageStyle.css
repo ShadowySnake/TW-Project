@@ -1,97 +1,51 @@
 body {
     font-size: 25px;
-    background-image:         url(https://wallpaperaccess.com/full/1567666.png);
-    background-attachment: fixed;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
-    display: flex;
+    display:flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
     background-color: rgb(5, 61, 61);
-    padding: 0.5em;
-    border-color: #ff5050;
-    border-radius: 2em;
-    margin-bottom: 0.5em;
+    
 }
 
-.header--welcome {
-    color: white;
-    padding-top: 0.15em;
-    padding-left: 1em;
+.header > *{
+    margin : auto;
+}
+.header--logo{
+    height: 100%;
+    width: 50px;
 }
 
-header>section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.header--logo img{
+    padding-left: 20px;
+    padding-top : 10px; 
+    width: 100%;
+    height: auto;
 }
 
 .header--question {
     color: white;
-    padding-top: 0.15em;
-    padding-right: 1em;
 }
 
-.documentation{
-  width: 200px;
-    height: 40px;
-    border: none;
-    outline: none;
+.header a{
+    float: left;
+    text-align: center;
     color: white;
-    background: black;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 20px;
-    letter-spacing : 2px;
+    text-decoration: none;
+    font-size: 30px;
 }
-.documentation:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 30s linear infinite;
-    opacity:0;
-    transition: opacity .3s ease;
-    border-radius: 10px;
+.header a.button{
+    padding-bottom: 15px;
+    width: 200px;
+    height: 20px;
 }
 
-.documentation:active {
-    color: #000;
-}
-
-.documentation:active:after {
-    background: transparent;
-}
-
-.documentation:hover:before {
-    opacity: 1;
-}
-
-.documentation:after {
-    z-index: -1;
-    content:'';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: black;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
 
 .login {
     font-size: 16px;
@@ -103,15 +57,6 @@ header>section {
     background-color: #555;
 }
 
-.signup{
-    font-size: 16px;
-    border-color : #922b2b;
-    padding: 0.5em;
-    border-radius: 1em;
-}
-.signup:hover{
-    background-color: #555;
-}
 button.login:active {
     margin: 0px;
     background-color: #ff7979;
@@ -123,7 +68,9 @@ main {
     justify-content: space-evenly;
 }
 
-.main--to--HTML {
+#main--to--HTML {
+    left: 0;
+    clear: both;
     color: white;
     float: left;
     width: 50%;
@@ -133,7 +80,7 @@ main {
     align-items:center;
 }
 
-.main--to--CSS {
+#main--to--CSS {
     color: white;
     float: left;
     width: 50%;
@@ -143,13 +90,12 @@ main {
     align-items:center;
 }
 
-
-.HTML--buttons {
+.HTML--buttons{
     padding: 0.5em;
-    height:150px;
+    height:100px;
     width:90%;
     background: #008B8B;
-    color: white;
+    color: black;
     border: 2px solid #333;
     letter-spacing: 2px;
     text-align: center;
@@ -163,6 +109,7 @@ main {
 }
 
 
+
 .HTML--buttons:hover{
   color: #fff;
   cursor: pointer;
@@ -172,10 +119,10 @@ main {
 
 .CSS--buttons {
     padding: 0.5em;
-    height:150px;
+    height:100px;
     width:90%;
     background: #008B8B;
-    color: white;
+    color: black;
     border: 2px solid #333;
     letter-spacing: 2px;
     text-align: center;

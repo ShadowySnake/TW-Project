@@ -1,59 +1,62 @@
-<!DOCTYPE html><html lang="en">
-  <head>
-    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn HTML & CSS
-    </title>
-    <link rel="stylesheet" href="./WelcomePageStyle.css">
-      
-    </head>
-  <body>
-    <header>
-      <div class="header--welcome">Welcome, user!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn HTML & CSS
+  </title>
+  <link rel="stylesheet" href="./WelcomePageStyle.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="header--logo"><img src ="logo.jpg">
+    </a>
+    <div>
+      <a href = "./Signup.html" class ="button"> Sign Up
+      </a>
+    </div>
+    <div>
+        <a href="https://developer.mozilla.org/ru/?" class ="button">Documentation
+        </a>
+    </div>
+    <div>
+      <a href="#" class ="button"> Leaderboard
+      </a>
+    </div>
+    
+      <div class="header--question">Would you like to login ?
       </div>
-      <div>
-        <button class="documentation">Sign Up
-        </button>
-        </div>
-      <div>
-        <form action="https://developer.mozilla.org/ru/" method="get" target="_blank">
-          <button class ="documentation" type="submit">Documentation
-          </button>
-          </form>
-          </div>
-      <div>
-        <button class ="documentation" type="button"> Leaderboard
-        </button>
+      <div class="login--boxes">
+        <input class="login--boxes" placeholder="Username">
+        <input class="login--boxes" type="password" placeholder="Password">
+        <button class="login">Login</button>
       </div>
-      <section>
-        <div class="header--question">Would you like to login ?
-        </div>
-        <div class="login--boxes">
-          <input class="login--boxes" placeholder="Username">
-          <input class="login--boxes" type="password" placeholder="Password">
-          <button class="login">Login</button> 
-          </div>
-          </section>
-          </header>
-    <main>
-      <section class="main--to--HTML">
-        <p>This place will start redirecting to the HTML challenges, in hopes of aiding people to start learning the basics of HTML.
-          <br> Remember that in order to start the challenge you must login!
-          <br> Press one of the buttons to commence. By completing the challenge, your time will be placed in a leaderboard to see just how fast you are!
-        </p>
-        <button class="HTML--buttons"> Beginner Levels </button>             <button class="HTML--buttons"> Amateur Levels </button>
-        <button class="HTML--buttons"> Experienced Levels </button></section>
-      <section class="main--to--CSS">
-        <p>This place will start redirecting to the CSS challenges, in hopes of aiding people to start learning the basics of CSS.
-          <br> Remember that in order to start the challenge you must login!
-          <br> Press one of the buttons to commence. By completing the challenge, your time will be placed in a leaderboard to see just how fast you are!
-        </p>
-        <button class="CSS--buttons"> Beginner Levels </button>               <button class="CSS--buttons"> Amateur Levels </button>
-        <button class="CSS--buttons"> Experienced Levels </button></section>
-          
-        </main>
-    <footer>
-      <div class="footer--text">All shown above is subject to change.</div>     
-      </footer>    
-   </body>       
+      <div class="header--question">
+        <a  href = "#" >Learn HTML & CSS</a> 
+      </div>
+    
+    
+  </header>
+  <main>
+    <div id="main--to--HTML">
+      <button class="HTML--buttons"> Beginner Levels </button> 
+      <button class="HTML--buttons"> Amateur Levels </button>
+      <button class="HTML--buttons"> Experienced Levels </button>
+    </div>
+    <div id="main--to--CSS">
+      <button class="CSS--buttons"> Beginner Levels </button> 
+      <button class="CSS--buttons"> Amateur Levels </button>
+      <button class="CSS--buttons"> Experienced Levels </button>
+    </div>
+
+  </main>
+  <footer>
+    <div class="footer--text">All shown above is subject to change.</div>
+  </footer>
+  
+</body>
+
 </html>
