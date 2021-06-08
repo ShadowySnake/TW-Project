@@ -52,6 +52,7 @@ header {
     border-color: #922b2b;
     padding: 0.5em;
     border-radius: 1em;
+    clear: both;
 }
 .login:hover{
     background-color: #555;
