@@ -7,8 +7,6 @@
                 echo '<div id="username">' . $username .'</div>';
                 echo '<div id="password">' . $password .'</div>';
                 echo '<script src="./submitter.js" onload="submitData()"></script>';
-                header('Location:../auth/Login.php');
-                die();
             }
             else echo 'THE PASSWORDS DONT MATCH';
         }

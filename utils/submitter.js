@@ -21,4 +21,7 @@ function submitData(){
     xhr.setRequestHeader("Content-type", "application/json");
     xhr.send(stringifiedPeer);
 
+    console.log(xhr.response);
+
+    window.location.replace("../auth/Login.php");
 }
