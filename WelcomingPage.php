@@ -26,7 +26,7 @@
         </a>
     </div>
     <div>
-      <a href="#" class ="button"> Leaderboard </a>
+      <a href="Leaderboard.php" class ="button"> Leaderboard </a>
     </div>
 
     <?php
