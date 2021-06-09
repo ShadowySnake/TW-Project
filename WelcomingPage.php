@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <header class="header" id="header">
+  <div class="div--header" id="header">
     <a href="#" class="header--logo"><img src ="./css/logo.jpg">
     </a>
     <div>
@@ -48,7 +48,7 @@
         echo '<a href = "utils/logout.php"> <button class="login"> Logout </button></a>';
       }
     ?>
-  </header>
+  </div>
   <main>
     <div id="main--to--HTML">
       <button class="HTML--buttons"> Beginner Levels </button> 

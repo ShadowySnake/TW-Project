@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
 }
 
-header {
+.div--header {
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -14,7 +14,7 @@ header {
     
 }
 
-.header > *{
+.div--header > *{
     margin : auto;
 }
 .header--logo{
@@ -33,14 +33,14 @@ header {
     color: white;
 }
 
-.header a{
+.div--header a{
     float: left;
     text-align: center;
     color: white;
     text-decoration: none;
     font-size: 30px;
 }
-.header a.button{
+.div--header a.button{
     padding-bottom: 15px;
     width: 200px;
     height: 20px;
@@ -140,20 +140,4 @@ main {
   color: #fff;
   cursor: pointer;
   background-position: right bottom;
-}
-
-
-footer {
-    color: white;
-    font-size: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer--text {
-    color: red;
-    position: absolute;
-    bottom: 3%;
 }
