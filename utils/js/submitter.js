@@ -1,7 +1,7 @@
 let username = document.getElementById("username");
 let password = document.getElementById("password");
 
-function submitData(){
+async function submitData(){
     console.log("Preparing statements...");
     //console.log("Username: " + username.innerText);
     //console.log("Password: " + password.innerText);

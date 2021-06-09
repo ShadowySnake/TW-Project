@@ -1,16 +1,19 @@
+<?php
+      session_start();
+      if(isset($_SESSION['message'])) $message = $_SESSION['message'];
+      else $message = "";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="./Signup.css">
-  </head>
-
-  <body>
-    
+</head>
+<body>
     <div class="formular">
       <form class="cont" action="../utils/formGet.php" method="get">
         <div class="container">
@@ -21,6 +24,12 @@
     
           <label for="password"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="password" required>
+          <?php
+              if($message != "") {
+                unset($_SESSION['message']);
+                echo '<div>' . $message . '</div>';
+              } 
+          ?>
           <div class="buttons">
               <a href="../WelcomingPage.php">
                 <button type="button" class="cancelbuttton">Cancel</button>
@@ -33,7 +42,5 @@
         </div>
       </form>
     </div>
-    
-    </body>
-
-    </html>
+</body>
+</html>
