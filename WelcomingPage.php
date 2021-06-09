@@ -14,12 +14,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Learn HTML & CSS
   </title>
-  <link rel="stylesheet" href="./WelcomePageStyle.css">
+  <link rel="stylesheet" href="./css/WelcomePageStyle.css">
 </head>
 
 <body>
   <header class="header" id="header">
-    <a href="#" class="header--logo"><img src ="logo.jpg">
+    <a href="#" class="header--logo"><img src ="./css/logo.jpg">
     </a>
     <div>
         <a href="https://developer.mozilla.org/ru/?" class ="button">Documentation
@@ -40,8 +40,8 @@
       else if($access_token !="") {
         include_once './utils/gitNameGetter.php';
         $namer = new GitName();
-        echo '<div class="header--question">' . $namer->getName($access_token) . '</div>';
         echo '<a href = "utils/logout.php"> <button class="login"> Logout </button></a>';
+        echo '<div class="header--question">' . $namer->getName($access_token) . '</div>';
       } else {
         $function_used = 'namer(' . $id . ')';
         echo '<script src="utils/js/singleUser.js" onload=' . $function_used . '></script>';
@@ -61,11 +61,7 @@
       <button class="CSS--buttons"> Experienced Levels </button>
     </div>
 
-  </main>
-  <footer>
-    <div class="footer--text">All shown above is subject to change.</div>
-  </footer>
-  
+    </main>
 </body>
 
 </html>

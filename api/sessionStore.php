@@ -7,5 +7,5 @@
 
     $data = json_decode(file_get_contents("php://input"));
     $_SESSION['id'] = $data;
-    echo $data;
+    //echo $data;
 ?>
