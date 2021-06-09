@@ -12,7 +12,7 @@
   $database = new Database();
   $db = $database->connect();
 
-  // Instantiate blog user object
+  // Instantiate user object
   $user = new Users($db);
 
   // Get raw posted data

@@ -15,7 +15,7 @@ class GitName {
             curl_close($ch);
 
             $data = json_decode($response);
-            return 'Welcome, ' . $data->login;
+            return $data->login;
     }
 }
 ?>

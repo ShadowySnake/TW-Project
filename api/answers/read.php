@@ -32,7 +32,11 @@
          extract($row);
          $item_arr = array(
              'id' => $id,
-             'answer' => $answer
+             'answer' => $answer,
+             'description' => $description,
+             'beginner' => $beginner,
+             'intermediate' => $intermediate
+
          );
       array_push($answers_arr, $item_arr);
      }
@@ -43,7 +47,10 @@
             if($id == $_GET['id']) {
             $item_arr = array(
                 'id' => $id,
-                'answer' => $answer
+                'answer' => $answer,
+                'description' => $description,
+                'beginner' => $beginner,
+                'intermediate' => $intermediate
             );
             array_push($answers_arr, $item_arr);
             break;

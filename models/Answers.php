@@ -8,6 +8,9 @@ class Answers {
     //Answer props
     public $id;
     public $answer;
+    public $description;
+    public $beginner;
+    public $intermediate;
 
     // Constructor with DB
     public function __construct($db) {
@@ -19,7 +22,10 @@ class Answers {
         // Create the querry
         $querry = 'SELECT 
         a.id,
-        a.answer
+        a.answer,
+        a.description,
+        a.beginner,
+        a.intermediate
         FROM
          ' . $this->table . ' a';
 
@@ -32,3 +38,5 @@ class Answers {
         return $stmt;
     }
 }
+
+?>
