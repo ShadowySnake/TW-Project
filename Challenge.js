@@ -233,3 +233,13 @@ returner.addEventListener('click', function(){
     
     window.location.replace("./WelcomingPage.php");
 })
+
+function easyHintFunc() {
+    var x = document.getElementById("hint");
+    x.style.visibility = "visible";
+}
+
+function hardHintFunc() {
+    var x = document.getElementById("hint");
+    x.style.visibility = "hidden";
+}
