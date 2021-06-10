@@ -8,17 +8,24 @@
 </head>
 
 <body>
-    <div class="main-editor" id="editor">
+    <div class="main-editor">
         <div class="first" id="first" contenteditable>
         </div>
         <!-- <div class="second"> wut </div> -->
         <iframe class="second" id="second"> </iframe>
         <div>
         <button class="buttons" id="checker"> Done! </button>
-        <button class="buttons" id="returner"> Go home! </button>
+        <button class="buttons" id="returner"> Home! </button>
         </div>
-        <!-- <div class="text">Challenge: Create a red square placed in the middle of the screen.</div> -->
-        
+        <div class="text">Challenge: Create a red square 
+            placed in the middle of the screen.</div>
+        <div>
+            <button class="buttons" onclick="easyHintFunc()"> Easy </button>
+            <button class="buttons" onclick="hardHintFunc()"> Hard </button>
+        </div>
+        <div class="text" id="hint">
+            Hint: Try creating a div with border.
+        </div>
     </div>
 </body>
 <script src="Challenge.js"></script>
