@@ -79,25 +79,25 @@ checker.addEventListener('click', function(){
             sessionStorage.setItem('questionsAnswered', 0);
 
             } else {
-                let number = parseInt(jsonResp2[0].answernumber) + 1;
-                if(number >= 2) alert("You have finished, congratz");
-                else{
-                let URL3 = "http://localhost/TW-Project/api/answers/read.php?id=" + number;
+                let number = parseInt(jsonResp2[0].answernumber);
+                let URL3 = "http://localhost/TW-Project/api/answers/read.php";
                 fetch(URL3, {
                     method : 'GET',
                     headers : new Headers({
                         "Accept": "application/json"
                     }),
                 }).then(resp3 => {
+                    console.log("Resp3 normal usr");
                     return resp3.json();
                 }).then(jsonResp3 => {
-                    if(jsonResp3[0].answer == first.textContent) {
-                        sessionStorage.setItem('questionsAnswered', number);
+                    if(number >= jsonResp3.length) alert("You have finished, congratz");
+                    else if(jsonResp3[number].answer == first.textContent) {
+                        sessionStorage.setItem('questionsAnswered', number + 1);
                     } else {
-                        sessionStorage.setItem('questionsAnswered', number-1);
+                        sessionStorage.setItem('questionsAnswered', number);
                         alert("Try again");
                     }
-                })}
+                })
             }
         })
     })} 
@@ -109,6 +109,7 @@ checker.addEventListener('click', function(){
                 "Accept": "application/json"
             }),
         }).then(gitResp => {
+            console.log("Git response");
             return gitResp.json();
         }).then(gitJsonResp => {
             if(gitJsonResp.length == 0){
@@ -122,9 +123,7 @@ checker.addEventListener('click', function(){
 
                 sessionStorage.setItem('questionsAnswered', 0);
             } else {
-                let number = parseInt(gitJsonResp[0].answernumber) + 1;
-                if(number >= gitJsonResp.length) alert("You have finished, congratz");
-                else{
+                let number = parseInt(gitJsonResp[0].answernumber)
                 let URL3 = "http://localhost/TW-Project/api/answers/read.php";
                 fetch(URL3, {
                     method : 'GET',
@@ -134,13 +133,14 @@ checker.addEventListener('click', function(){
                 }).then(resp3 => {
                     return resp3.json();
                 }).then(jsonResp3 => {
-                    if(jsonResp3[number].answer == first.textContent) {
-                        sessionStorage.setItem('questionsAnswered', number);
+                    if(number >= jsonResp3.length) alert("You have finished, congratz");
+                    else if(jsonResp3[number].answer == first.textContent) {
+                        sessionStorage.setItem('questionsAnswered', number + 1);
                     } else {
-                        sessionStorage.setItem('questionsAnswered', number-1);
+                        sessionStorage.setItem('questionsAnswered', number);
                         alert("Try again");
                     }
-                })}
+                })
             }
         })
     }
