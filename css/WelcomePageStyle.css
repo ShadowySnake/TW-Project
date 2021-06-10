@@ -17,6 +17,7 @@ body {
 .div--header > *{
     margin : auto;
 }
+
 .header--logo{
     height: 100%;
     width: 50px;
@@ -46,98 +47,80 @@ body {
     height: 20px;
 }
 
-
 .login {
     font-size: 16px;
-    border-color: #922b2b;
+    background: linear-gradient(45deg, transparent 5%, #41a1d8 5%);
+      border: 0;
+      color: #fff;
+      letter-spacing: 3px;
+      box-shadow: 6px 0px 0px #00E6F6;
+      outline: transparent;
     padding: 0.5em;
-    border-radius: 1em;
     clear: both;
 }
-.login:hover{
-    background-color: #555;
-}
 
-button.login:active {
-    margin: 0px;
-    background-color: #ff7979;
-}
+
+.login:hover{
+    background: linear-gradient(45deg, transparent 5%, #9cb5c4 5%);
+}  
 
 main {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
-#main--to--HTML {
-    left: 0;
-    clear: both;
+.grids{
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid--first{
+    font-size: 40px;
+    width: 25%;
+    padding: 0;
     color: white;
     float: left;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items:center;
+    text-align: center;
 }
 
-#main--to--CSS {
+.grid--second{
+    width: 50%;
+    margin-top: 10%;
+    padding: 0;
     color: white;
     float: left;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items:center;
-}
-
-.HTML--buttons{
-    padding: 0.5em;
-    height:100px;
-    width:90%;
-    background: #008B8B;
-    color: black;
-    border: 2px solid #333;
-    letter-spacing: 2px;
     text-align: center;
-    position: relative;
-    display: block;
-    background: linear-gradient(to right, #5F9EA0  50%,#008B8B 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all .5s ease-out;
-    margin-top: 20px;
 }
 
-
-
-.HTML--buttons:hover{
-  color: #fff;
-  cursor: pointer;
-  background-position: left bottom;
-}
-
-
-.CSS--buttons {
-    padding: 0.5em;
-    height:100px;
-    width:90%;
-    background: #008B8B;
-    color: black;
-    border: 2px solid #333;
-    letter-spacing: 2px;
+.grid--third{
+    font-size: 40px;
+    width: 25%;
+    padding: 0;
+    color: white;
+    float: right;
     text-align: center;
-    position: relative;
-    display: block;
-    background: linear-gradient(to left, #5F9EA0 50%, #008B8B 50%);
-    background-size: 200% 100%;
-    background-position: left bottom;
-    transition: all .5s ease-out;
-    margin-top: 20px;
 }
 
-.CSS--buttons:hover{
-  color: #fff;
-  cursor: pointer;
-  background-position: right bottom;
-}
+  .goto--challenge {
+      width: auto;
+      height: 56px;
+      margin: 0;
+      font-size: 28px;
+      font-family: 'Bebas Neue';
+      background: linear-gradient(45deg, transparent 5%, #41a1d8 5%);
+      border: 0;
+      color: #fff;
+      letter-spacing: 3px;
+      box-shadow: 6px 0px 0px #00E6F6;
+      outline: transparent;
+      text-align: center;
+      position: relative;
+  }
+
+  .goto--challenge:hover{
+    background: linear-gradient(45deg, transparent 5%, #9cb5c4 5%);
+  }
