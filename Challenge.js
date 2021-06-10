@@ -1,11 +1,11 @@
 const first = document.getElementById('first');
-//const iframe = document.getElementById('second');
+const iframe = document.getElementById('second');
 const checker = document.getElementById('checker');
 const returner = document.getElementById('returner');
 
 first.addEventListener('keyup', function(){
     var html = first.textContent
-    //iframe.src = "data:text/html;charset=utf-8," + encodeURI(html);
+    iframe.src = "data:text/html;charset=utf-8," + encodeURI(html);
 })
 
 //first.addEventListener('paste', function(e){
@@ -40,11 +40,14 @@ checker.addEventListener('click', function(){
             return resp2.json();
         }).then(jsonResp2 => {
             if(jsonResp2.length == 0){
+                let normalJson = {
+                    "name" : name
+                }
             const xhr = new XMLHttpRequest();
 
             xhr.open('POST', './api/progress/create.php');
             xhr.setRequestHeader("Content-type", "application/json");
-            xhr.send(JSON.stringify(name));
+            xhr.send(JSON.stringify(normalJson));
 
             sessionStorage.setItem('questionsAnswered', 0);
 
