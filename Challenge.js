@@ -16,7 +16,8 @@ questionGetter();
 
 async function questionGetter(){
     let item = document.createElement("div");
-    if(sessionStorage.getItem('questionsAnswered') == null) item.innerText = "Press the 'Click Me' button!";
+    item.className = "text";
+    if(sessionStorage.getItem('questionsAnswered') == null) item.innerText = "Press the 'Done' button!";
     else {
             let URL = "http://localhost/TW-Project/api/answers/read.php";
             let number = parseInt(sessionStorage.getItem('questionsAnswered'));
@@ -40,7 +41,7 @@ async function questionGetter(){
             })
     }
 
-    document.body.appendChild(item);
+    document.getElementById("editor").appendChild(item);
 }
 
 first.addEventListener('keyup', function(){
@@ -227,7 +228,7 @@ returner.addEventListener('click', function(){
             }
         })
     }
-    
+
     sessionStorage.clear();
     
     window.location.replace("./WelcomingPage.php");
