@@ -19,7 +19,7 @@
 
 <body>
   <div class="div--header" id="header">
-    <a href="#" class="header--logo"><img src ="./css/logo.jpg">
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="header--logo"><img src ="./css/logo.jpg">
     </a>
     <div>
         <a href="https://developer.mozilla.org/ru/?" class ="button">Documentation
