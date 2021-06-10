@@ -55,18 +55,30 @@
     ?>
   </div>
   <main>
-    <div id="main--to--HTML">
-      <button class="HTML--buttons"> Beginner Levels </button> 
-      <button class="HTML--buttons"> Amateur Levels </button>
-      <button class="HTML--buttons"> Experienced Levels </button>
+    <div class="grids">
+    <div class="grid--first">
+     <p> What is HTML? </p>
     </div>
-    <div id="main--to--CSS">
-      <button class="CSS--buttons"> Beginner Levels </button> 
-      <button class="CSS--buttons"> Amateur Levels </button>
-      <button class="CSS--buttons"> Experienced Levels </button>
+    <?php if($access_token == "" && $id==""){ echo '<div class="grid--second">
+      <a href="auth/Login.php" > 
+      <button class="goto--challenge"> Get Started </button>
+    </a>
+    </div>';
+    echo '<script src="./utils/js/sessionEmptier.js"></script>';
+    }
+    else if($access_token !="") {
+      echo '<div class="grid--second">
+      <a href="Challenge.html" > 
+      <button class="goto--challenge"> Get Started </button>
+    </a>
+    </div>';
+    }
+    ?>
+    <div class="grid--third">
+      <p> What is CSS? </p>
     </div>
-
-    </main>
+    </div>
+  </main>
 </body>
 
 </html>
