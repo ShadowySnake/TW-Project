@@ -57,7 +57,12 @@
   <main>
     <div class="grids">
     <div class="grid--first">
-     <p> What is HTML? </p>
+      <p> What HTML is? </p>
+     <p>The HyperText Markup Language, or HTML is the 
+       standard markup language for documents designed to be displayed 
+       in a web browser. It can be assisted by technologies such as
+        Cascading Style Sheets (CSS) and scripting languages such as 
+        JavaScript.</p>
     </div>
     <?php if($access_token == "" && $id==""){ echo '<div class="grid--second">
       <a href="auth/Login.php" > 
@@ -75,7 +80,11 @@
     }
     ?>
     <div class="grid--third">
-      <p> What is CSS? </p>
+      <p> What CSS is?</p>
+      <p> It is a style sheet language used for describing the presentation of a document 
+        written in a markup language such as HTML. CSS is a cornerstone 
+        technology of the World Wide Web, alongside HTML and JavaScript.
+        </p>
     </div>
     </div>
   </main>
