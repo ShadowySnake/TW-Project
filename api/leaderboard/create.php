@@ -2,34 +2,33 @@
   // Headers
   header('Access-Control-Allow-Origin: *');
   header('Content-Type: application/json');
-  header('Access-Control-Allow-Methods: PUT');
+  header('Access-Control-Allow-Methods: POST');
   header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
 
   include_once '../../config/Database.php';
-  include_once '../../models/Progress.php';
+  include_once '../../models/Leaderboard.php';
 
   // Instantiate DB & connect
   $database = new Database();
   $db = $database->connect();
 
-  // Instantiate blog progress object
-  $progress = new Progress($db);
+  // Instantiate leaderboard object
+  $lBoard = new Leaderboard($db);
 
   // Get raw posted data
   $data = json_decode(file_get_contents("php://input"));
 
-  // Set name to update
-  $progress->name = $data->name;
-  $progress->answernumber = $data->answernumber;
-  $progress->time = $data->time;
+  $lBoard->name = $data->name;
+  $lBoard->time = $data->time;
 
-  // Update progress
-  if($progress->update()) {
+
+  // Create progress
+  if($lBoard->create()) {
     echo json_encode(
-      array('message' => 'User Updated')
+      array('message' => 'Created success!')
     );
   } else {
     echo json_encode(
-      array('message' => 'User Not Updated')
+      array('message' => 'Could not create!')
     );
   }

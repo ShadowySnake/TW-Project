@@ -7,6 +7,7 @@ class Progress {
     //Answer props
     public $name;
     public $answernumber;
+    public $time;
 
     // Constructor with DB
     public function __construct($db) {
@@ -18,7 +19,8 @@ class Progress {
         // Create the querry
         $querry = 'SELECT 
         a.name,
-        a.answernumber
+        a.answernumber,
+        a.time
         FROM
          ' . $this->table . ' a';
 
@@ -53,7 +55,7 @@ class Progress {
     public function update() {
         // Create the query
         $query = 'UPDATE ' . $this->table . '
-                            SET answernumber = :answernumber
+                            SET answernumber = :answernumber, time = :time
                             WHERE name = :name';
   
         // Prepare the statement
@@ -61,10 +63,12 @@ class Progress {
   
         // Clean data
         $this->name = htmlspecialchars(strip_tags($this->name));
+        $this->time = htmlspecialchars(strip_tags($this->time));
         $this->answernumber = htmlspecialchars(strip_tags($this->answernumber));
   
         // Bind the data
         $stmt->bindParam(':answernumber', $this->answernumber);
+        $stmt->bindParam(':time', $this->time);
         $stmt->bindParam(':name', $this->name);
   
         // Execute query

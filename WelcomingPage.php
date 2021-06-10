@@ -71,7 +71,7 @@
     </div>';
     echo '<script src="./utils/js/sessionEmptier.js"></script>';
     }
-    else if($access_token !="") {
+    else if($access_token !="" || $id != "") {
       echo '<div class="grid--second">
       <a href="Challenge.html" > 
       <button class="goto--challenge"> Get Started </button>

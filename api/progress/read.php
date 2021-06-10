@@ -32,6 +32,7 @@
             if($name == $_GET['name']) {
             $item_arr = array(
                 'answernumber' => $answernumber,
+                'time' => $time
             );
             array_push($progress_arr, $item_arr);
             break;
