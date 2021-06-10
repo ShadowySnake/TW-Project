@@ -13,9 +13,10 @@ body{
     background:#1ABC9C;
 }
 
-th,td{
+th,tr,td{
     text-align:center;
     padding:5px 0;
+    background: #20e2bb;
   }
 
 .homeButton {

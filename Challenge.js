@@ -37,7 +37,10 @@ async function questionGetter(){
                     clearInterval(timer);
                     sessionStorage.setItem('finished', true);
                 }
-                else item.innerText = jsonResp[number].description;
+                else {
+                    item.innerText = jsonResp[number].description;
+                    sessionStorage.setItem('hint', jsonResp[number].beginner);
+                }
             })
     }
 
@@ -234,12 +237,18 @@ returner.addEventListener('click', function(){
     window.location.replace("./WelcomingPage.php");
 })
 
-function easyHintFunc() {
-    var x = document.getElementById("hint");
-    x.style.visibility = "visible";
+function Hint() {
+    if(sessionStorage.getItem('pressedOnce', "yes") == null){
+    let item = document.createElement("div");
+    item.className = "text";
+    item.id = "hint";
+    item.innerText = sessionStorage.getItem('hint');
+    document.getElementById("editor").appendChild(item);
+    sessionStorage.setItem('pressedOnce', "yes");
+    }
 }
 
-function hardHintFunc() {
+function ShowHide() {
     var x = document.getElementById("hint");
     x.style.visibility = "hidden";
 }
