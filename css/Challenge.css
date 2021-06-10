@@ -1,43 +1,29 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+body{
+    background-color: rgb(5, 61, 61);
 }
-
 .main-editor{
-    background: rgb(5, 61, 61);
     width: 100%;
     height: 100%;
     padding: 1em;
-    position: fixed;
     box-shadow: 2px 3px black;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
 }
 
 .first{
     width: 40%;
     height: 40%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    white-space: pre;
     background-color: #ffffff;
-    display: block;
-    position: relative;
-    margin: 5 auto;
+    padding: 1em;
+    margin: 50;
 }
 
 .second{
     width: 40%;
     height: 40%;
     background-color: rgb(255, 255, 255);   
-    overflow: hidden;
-    padding-bottom: 2em;
-    padding: 0.5em;
-    display: block;
-    position: relative;
-    margin: 50 auto;
+    padding: 1em;
+    margin: 50;
     color: black;
 }
 
@@ -55,6 +41,9 @@
       outline: transparent;
       text-align: center;
       position: relative;
+      clear: both;
+      margin-left: 50;
+      margin-right: 50;
 }
 
 .buttons:hover{
@@ -62,7 +51,8 @@
 }
 
 .text{
-    width: 30%;
+    width: 20%;
     color: lightgray;
-
+    font-size: 36;
+    margin: 5;
 }
