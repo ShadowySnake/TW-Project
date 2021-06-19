@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(5, 61, 61);
+}
+.main-editor{
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    box-shadow: 2px 3px black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first{
+    width: 40%;
+    height: 40%;
+    background-color: #ffffff;
+    padding: 1em;
+    margin: 50;
+}
+
+.second{
+    width: 40%;
+    height: 40%;
+    background-color: rgb(255, 255, 255);   
+    padding: 1em;
+    margin: 50;
+    color: black;
+}
+
+.buttons{
+      width: 30%;
+      height: 56px;
+      margin: 20;
+      font-size: 28px;
+      font-family: 'Bebas Neue';
+      background: linear-gradient(45deg, transparent 5%, #41a1d8 5%);
+      border: 0;
+      color: #fff;
+      letter-spacing: 3px;
+      box-shadow: 6px 0px 0px #00E6F6;
+      outline: transparent;
+      text-align: center;
+      position: relative;
+      clear: both;
+      margin-left: 50;
+      margin-right: 50;
+}
+
+.buttons:hover{
+    background: linear-gradient(45deg, transparent 5%, #9cb5c4 5%);
+}
+
+.text{
+    width: 20%;
+    color: lightgray;
+    font-size: 36;
+    margin: 5;
+}
