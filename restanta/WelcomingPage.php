@@ -1,6 +1,5 @@
 <?php
     include './languages/lang_cfg.php';
-    
     if(isset($_SESSION['my-access-token'])) $access_token = $_SESSION['my-access-token'];
     else $access_token = "";
     if(isset($_SESSION['id'])) $id = $_SESSION['id'];
@@ -75,7 +74,7 @@
     }
     else if($access_token !="" || $id != "") {
       echo '<div class="grid--second">
-      <a href="Challenge.html" > 
+      <a href="Challenge.php" > 
       <button class="goto--challenge">'; echo $lang['start']; echo'</button>
     </a>
     </div>';

@@ -19,6 +19,11 @@
     'enterpw' => 'Enter Password',
     'langen' => 'English',
     'langru' => 'Russian',
-    'langro' => 'Romanian'
+    'langro' => 'Romanian',
+    'home' => 'Home',
+    'done' => 'Done',
+    'ready' => 'Ready',
+    'question' => 'Question:',
+    'hint' => 'Hint:'
     )
 ?>

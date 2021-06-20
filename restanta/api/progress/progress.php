@@ -1,5 +1,4 @@
 <?php
-header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
 
 require '../functions.php';
@@ -67,6 +66,7 @@ include_once '../../models/Progress.php';
                 updateProgress($db);
                 break;
         }
+        break;
     default:
        http_response_code(404);
        break;

@@ -7,7 +7,6 @@ class Progress {
     //Answer props
     public $name;
     public $answernumber;
-    public $time;
 
     // Constructor with DB
     public function __construct($db) {
@@ -58,10 +57,9 @@ class Progress {
         // Clean data
         $this->name = htmlspecialchars(strip_tags($this->name));
         $this->answernumber = htmlspecialchars(strip_tags($this->answernumber));
-            
         // Bind the data
         $stmt->bindParam(':name', $this->name);
-        $answernumber->bindParam(':name', $this->answernumber);
+        $stmt->bindParam(':answernumber', $this->answernumber);
 
         // Execute query
         if($stmt->execute()) {
@@ -80,7 +78,6 @@ class Progress {
   
         // Clean data
         $this->name = htmlspecialchars(strip_tags($this->name));
-        $this->time = htmlspecialchars(strip_tags($this->time));
         $this->answernumber = htmlspecialchars(strip_tags($this->answernumber));
   
         // Bind the data

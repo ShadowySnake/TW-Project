@@ -166,7 +166,8 @@ function getAnswer($connect){
              'id' => $id,
              'question' => $question,
              'hint' => $hint,
-             'answer' => $answer
+             'answer' => $answer,
+             'lang' => $lang
 
          );
       array_push($answers_arr, $item_arr);
@@ -180,7 +181,8 @@ function getAnswer($connect){
               'id' => $id,
               'question' => $question,
               'hint' => $hint,
-              'answer' => $answer
+              'answer' => $answer,
+              'lang' => $lang
             );
             array_push($answers_arr, $item_arr);
             break;

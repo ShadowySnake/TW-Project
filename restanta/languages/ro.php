@@ -19,6 +19,11 @@
     'enterpw' => 'Introdu parola',
     'langen' => 'Engleza',
     'langru' => 'Rusa',
-    'langro' => 'Romana'
+    'langro' => 'Romana',
+    'home' => 'Inapoi',
+    'done' => 'Trimite',
+    'ready' => 'Start',
+    'question' => 'Intrebare:',
+    'hint' => 'Ajutor:'
     )
 ?>

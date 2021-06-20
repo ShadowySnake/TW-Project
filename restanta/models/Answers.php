@@ -10,6 +10,7 @@ class Answers {
     public $question;
     public $hint;
     public $answer;
+    public $lang;
 
     // Constructor with DB
     public function __construct($db) {
@@ -23,7 +24,8 @@ class Answers {
         a.id,
         a.question,
         a.hint,
-        a.answer
+        a.answer,
+        a.lang
         FROM
          ' . $this->table . ' a';
 
