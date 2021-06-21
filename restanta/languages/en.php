@@ -29,5 +29,17 @@
     'name' => 'Name',
     'time' => 'Time',
     'level' => 'Level',
-    'difficulty' => 'Difficulty')
+    'difficulty' => 'Difficulty',
+    'textguide' =>  'Write the answer in the container above.</br>
+                     Difficulty is set to hard by default.</br>
+                     Press submit when you are done.</br>
+                     Watch the time.</br>
+                     Enjoy.',
+    'lboardmess' => 'Check the leaderboard for each level and difficulty!</br>',
+    'gsmess' => 'Let\'s get started!</br>',
+    'docmess' => 'Here is the documentation for those who are interested.</br>',
+    'easy' => 'Easy',
+    'hard' => 'Hard',
+    'load' => 'Load'
+    )
 ?>

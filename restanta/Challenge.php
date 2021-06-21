@@ -20,8 +20,8 @@
         </a>
         </div>  
         <div class = "question" class = "justify-center flex-column">
-                <?php echo $lang['question'] ?>
-                <div class = "question" id ="q">
+                <h1> <?php echo $lang['question'] ?> </h1>
+                <div id ="q">
                 </div>
             <div>
                 <?php echo $lang['time'] ?>
@@ -34,13 +34,13 @@
                 </div>
             </div>
         </div>
-       
         <div class="first" id="first" contenteditable>
         </div>
-        
-        <div>
-        <button class="buttons" id="checker"> <?php echo $lang['done'] ?> </button>
-        
+        <div class="textGUIDE">
+            <?php echo $lang['textguide'] ?>
+        </div>
+        <div class="button">
+        <button class="checkbutton" id="checker"> <?php echo $lang['done'] ?> </button>
         </div>
         <!-- <div class="text" id="hint">
             Hint: Try creating a div with border.

@@ -29,6 +29,17 @@
     'name' => 'Nume',
     'time' => 'Timp',
     'level' => 'Nivel',
-    'difficulty' => 'Dificultate'
+    'difficulty' => 'Dificultate',
+    'textguide' =>  'Scrieti raspunsul in containerul de mai sus.</br>
+                     Dificultatea e avansata.</br>
+                     Apasa trimite cand esti gata.</br>
+                     Atent la timp.</br>
+                     Bafta.',
+    'lboardmess' => 'Verifica clasamentul pentru fiecare nivel si dificultate!</br>',
+    'gsmess' => 'Sa incepem provocarea!</br>',
+    'docmess' => 'Aici este documentatia API-ului.</br>',
+    'easy' => 'Incepator',
+    'hard' => 'Avansat',
+    'load' => 'Incarca'
     )
 ?>
