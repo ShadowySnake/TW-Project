@@ -406,7 +406,7 @@ class Users {
    }
 
     /**
-     * @OA\DELETE(path="/TW-Project/api/adduser", tags={"User"},
+     * @OA\DELETE(path="/TW-Project/api/deleteuser", tags={"User"},
      * @OA\RequestBody(
      *      @OA\MediaType(
      *          mediaType="json",
