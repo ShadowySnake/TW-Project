@@ -58,9 +58,9 @@ body {
     background-color: #1F2833;
 }
 
-.textguide{
+.textGUIDE{
     grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-end: span 1;
     grid-column-start: 1;
     grid-column-end: 2;
     color: #C5C6C7;
